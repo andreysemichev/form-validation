@@ -79,6 +79,7 @@ body {
   width: 100%;
   font-size: 14px;
   padding: 10px;
+  transition: border-color 0.2s;
 }
 
 .form__input:focus {
