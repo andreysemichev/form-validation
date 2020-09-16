@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+  <title>Form Validation</title>
+</head>
+<body>
+  <div class="create-account">
+    <div class="create-account__top">
+      <h2 class="create-account__title">Create Account</h2>
+    </div>
+    <form class="create-account__form form">
+      <div class="form__field form__field--success">
+        <label class="form__name">Username</label>
+        <input class="form__input" type="text" id="input-username" placeholder="Username">
+        <i class="form__icon form__icon--success fas fa-check-circle"></i>
+        <i class="form__icon form__icon--error fas fa-exclamation-circle"></i>
+        <small class="form__message">Error message</small>
+      </div>
+      <div class="form__field form__field--error">
+        <label class="form__name">Email</label>
+        <input class="form__input" type="email" id="input-email" placeholder="example@example.com">
+        <i class="form__icon form__icon--success fas fa-check-circle"></i>
+        <i class="form__icon form__icon--error fas fa-exclamation-circle"></i>
+        <small class="form__message">Error message</small>
+      </div>
+      <div class="form__field">
+        <label class="form__name">Password</label>
+        <input class="form__input" type="password" id="input-password" placeholder="Password">
+        <i class="form__icon form__icon--success fas fa-check-circle"></i>
+        <i class="form__icon form__icon--error fas fa-exclamation-circle"></i>
+        <small class="form__message">Error message</small>
+      </div>
+      <div class="form__field">
+        <label class="form__name">Confirm Password</label>
+        <input class="form__input" type="text" id="input-confirm-password" placeholder="Confirm Password">
+        <i class="form__icon form__icon--success fas fa-check-circle"></i>
+        <i class="form__icon form__icon--error fas fa-exclamation-circle"></i>
+        <small class="form__message">Error message</small>
+      </div>
+      <button class="form__submit">Submit</button>
+    </form>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

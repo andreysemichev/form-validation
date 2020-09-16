@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #8ce09d;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.create-account {
+  background: #fff;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 100%;
+}
+
+.create-account__top {
+  background: #f7f7f7;
+  padding: 20px 40px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form__field {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form__field--success .form__input {
+  border-color: #5cb85c;
+}
+
+.form__field--error .form__input {
+  border-color: #d9534f;
+}
+
+.form__field--success .form__icon--success {
+  visibility: visible;
+  color: #5cb85c;
+}
+
+.form__field--error .form__icon--error {
+  visibility: visible;
+  color: #d9534f;
+}
+
+.form__field--error .form__message {
+  visibility: visible;
+  color: #d9534f;
+}
+
+.form__name {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form__input {
+  font-family: inherit;
+  border: 2px solid #f0f0f0;
+  border-radius: 3px;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.form__icon {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+
+.form__message {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+}
+
+.form__submit {
+  cursor: pointer;
+  background: #8ce09d;
+  border-radius: 3px;
+  border: 2px solid #8ce09d;
+  color: #fff;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-family: inherit;
+}
