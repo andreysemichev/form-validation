@@ -12,15 +12,15 @@
     <div class="create-account__top">
       <h2 class="create-account__title">Create Account</h2>
     </div>
-    <form class="create-account__form form">
-      <div class="form__field form__field--success">
+    <form class="create-account__form form" id="create-account-form">
+      <div class="form__field">
         <label class="form__name">Username</label>
         <input class="form__input" type="text" id="input-username" placeholder="Username">
         <i class="form__icon form__icon--success fas fa-check-circle"></i>
         <i class="form__icon form__icon--error fas fa-exclamation-circle"></i>
         <small class="form__message">Error message</small>
       </div>
-      <div class="form__field form__field--error">
+      <div class="form__field">
         <label class="form__name">Email</label>
         <input class="form__input" type="email" id="input-email" placeholder="example@example.com">
         <i class="form__icon form__icon--success fas fa-check-circle"></i>
@@ -36,7 +36,7 @@
       </div>
       <div class="form__field">
         <label class="form__name">Confirm Password</label>
-        <input class="form__input" type="text" id="input-confirm-password" placeholder="Confirm Password">
+        <input class="form__input" type="password" id="input-confirm-password" placeholder="Confirm Password">
         <i class="form__icon form__icon--success fas fa-check-circle"></i>
         <i class="form__icon form__icon--error fas fa-exclamation-circle"></i>
         <small class="form__message">Error message</small>

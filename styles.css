@@ -13,6 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  color: #333;
 }
 
 .create-account {
@@ -71,6 +72,7 @@ body {
 .form__input {
   outline: none;
   font-family: inherit;
+  color: inherit;
   border: 2px solid #f0f0f0;
   border-radius: 3px;
   display: block;
@@ -102,13 +104,19 @@ body {
   background: #8ce09d;
   border-radius: 3px;
   border: 2px solid #8ce09d;
-  color: #fff;
+  color: inherit;
   display: block;
   width: 100%;
   padding: 10px;
   font-size: 16px;
   font-family: inherit;
   outline: none;
+  transition: background 0.2s, border 0.2s;
+}
+
+.form__submit:hover {
+  background: #72da87;
+  border: 2px solid #72da87;
 }
 
 .form__submit:active {
