@@ -1,0 +1,209 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css';
+
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 0.9em;
+    background: #f3f3f3;
+    display: block;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+a {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
+
+a:hover {
+    /* ... */
+}
+
+input[type='text'] {
+    padding: 5px;
+    outline: none;
+    border: 0;
+    background: inherit;
+    border-bottom: 1px solid lightgray;
+}
+
+button {
+    border: 0;
+    padding: 5px;
+    outline: none;
+    background: inherit;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+button:hover {
+    color: #000;
+}
+
+.goods {
+    margin: 15px;
+    max-width: 1140px;
+    width: 100%;
+    background: #fff;
+}
+
+.goods__inner {
+    margin: 15px;
+}
+
+.goods__list-title {
+    font-size: 1.5em;
+    margin: 30px 0;
+}
+
+.closeBtn {
+    display: none;
+}
+
+.goods__table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    min-width: 400px;
+    width: 100%;
+}
+
+.goods__table thead tr {
+    background: #e0e0e0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.goods__table th, .goods__table td {
+    padding: 12px 15px;
+    width: 33.33%;
+
+    text-align: center;
+}
+
+/* .goods__table th:first-of-type, .goods__table td:first-of-type  {
+    text-align: left;
+} */
+
+.goods__table th:first-of-type {
+    text-align: center;
+}
+
+.goods__table tbody tr {
+    border-bottom: 1px solid lightgray;
+}
+
+.goods__table tbody tr:nth-child(even) {
+    background: #f1f1f1;
+}
+
+.goods__table tbody tr:last-of-type {
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.goods__add-form label {
+    display: grid;
+    grid-template-columns: 170px 200px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.goods__add-form span {
+    margin-right: 20px;
+}
+
+.goods__add-form button {
+    border: 0;
+    transition: border 0.3s;
+    transition: color 0.3s;
+    width: 470px;
+}
+
+.goods__add-form button:hover {
+    color: #000;
+}
+
+.goods__add-form input[type='text'] {
+    width: 300px;
+    padding: 5px;
+    outline: none;
+    border: 0;
+    background: inherit;
+    border: 1px solid lightgray;
+}
+
+/* ПАГАНАЦИЯ НАЧАЛО */
+.pagination {
+    display: flex;
+}
+
+.pagination__control-btn, .pagination__links {
+    display: flex;
+}
+
+.pagination__number {
+    padding: 10px;
+    background: #f1f1f1;
+    transition: background 0.3s;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination__number:hover {
+    background: #dddddd;
+}
+
+.pagination__number--selected {
+    pointer-events: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.pagination__number--disable, .pagination__number--dots {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 650px) {
+    .pagination {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .pagination__control-btn {
+        background: #f1f1f1;
+    }
+
+    .pagination__control-btn {
+        justify-content: center;
+        width: 50%;
+        font-size: 0.8em;
+    }
+
+    .pagination__control-btn .pagination__number {
+        width: 50%;
+    }
+
+    .pagination__links {
+        width: 100%;
+    }
+
+    .pagination__links .pagination__number {
+        min-width: 14.28%;
+    }
+
+    .pagination__links {
+        order: 2;
+    }
+}
+/* ПАГАНАЦИЯ КОНЕЦ */

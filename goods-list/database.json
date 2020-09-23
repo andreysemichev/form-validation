@@ -1,0 +1,10 @@
+{
+    "dev": {
+      "host": {"ENV": "GOODS_LIST_DB_HOST"},
+      "user": {"ENV": "GOODS_LIST_DB_USER"},
+      "password" : {"ENV": "GOODS_LIST_PASSWORD"},
+      "database": {"ENV": "GOODS_LIST_DB_NAME"},
+      "driver": "mysql",
+      "multipleStatements": true
+    }
+}
