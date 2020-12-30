@@ -2,4 +2,149 @@
 
 .root {
   padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+
+  &__add {
+    padding-bottom: 20px;
+    margin-left: auto;
+
+    button {
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.8em;
+    }
+  }
+
+  &__modal {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    &-content {
+      padding: 50px 20px;
+      background-color: $colorWhite;
+      max-width: 500px;
+      width: 100%;
+
+      label {
+        padding-top: 15px;
+        display: block;
+
+        &:first-child {
+          padding-top: 0;
+        }
+
+        span {
+          display: block;
+          width: 100%;
+          margin-bottom: 5px;
+          text-transform: uppercase;
+          font-size: 0.8em;
+          font-weight: 600;
+        }
+
+        input {
+          display: block;
+          width: 100%;
+        }
+
+        textarea {
+          display: block;
+          width: 100%;
+          height: 100px;
+          resize: none;
+        }
+      }
+
+      &-btn {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-around;
+
+        button {
+          max-width: 130px;
+          width: 100%;
+          cursor: pointer;
+
+          &:last-child {
+            color: $colorRed;
+          }
+        }
+      }
+    }
+  }
+
+  &__table {
+    font-size: 0.9em;
+    width: 100%;
+    border-collapse: collapse;
+
+    &-name-t {
+      width: 25%;
+    }
+
+    &-description-t {
+      width: 55%;
+    }
+
+    &-price-t {
+      width: 10%;
+    }
+
+    &-setting-t {
+      width: 10%;
+    }
+
+    tr {
+      text-align: left;
+      border-bottom: 1px solid $tableTopBG;
+      transition: 0.2s background-color;
+
+      &:hover {
+        background-color: $tableTopBG;
+      }
+    }
+
+    th {
+      background-color: $tableTopBG;
+      font-weight: 600;
+      padding: 15px;
+    }
+
+    td {
+      padding: 15px;
+      vertical-align: top;
+    }
+
+    &-price::after {
+      content: "₽";
+      padding-left: 5px;
+    }
+
+    &-delete {
+      color: $colorRed;
+    }
+
+    &-edit, &-delete, &-save, &-close {
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s opacity;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
 }

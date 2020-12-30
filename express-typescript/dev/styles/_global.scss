@@ -18,10 +18,13 @@ body {
   flex-direction: column;
 }
 
-input, button {
+input, button, textarea {
   font-family: inherit;
   font-size: inherit;
   outline: none;
+  border: 1px solid lighten($colorBlack, 50%);
+  border-radius: 1px;
+  padding: 5px 15px;
 }
 
 img {
@@ -52,4 +55,18 @@ ul {
 
 .content {
   flex: 1 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+  height: 13px;
+  border-left: 1px solid darken($colorWhite, 10%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darken($colorWhite, 60%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: darken($colorWhite, 70%);
 }

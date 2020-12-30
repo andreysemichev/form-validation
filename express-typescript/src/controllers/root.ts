@@ -8,6 +8,7 @@ const get = (req: Request, res: Response, next: NextFunction) => {
 
   const locals = res.locals;
   locals.styles.push("/styles/root/root.css");
+  locals.scripts.push("/scripts/root/root.js");
 
   res.render("root");
 };
