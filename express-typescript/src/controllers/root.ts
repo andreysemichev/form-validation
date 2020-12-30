@@ -1,14 +1,14 @@
-import { Request, Response, NextFunction } from 'express';
-import logging from '../config/logging';
+import { Request, Response, NextFunction } from "express";
+import logging from "../config/logging";
 
-const NAMESPACE = 'Root Controllers';
+const NAMESPACE = "Root Controllers";
 
 const get = (req: Request, res: Response, next: NextFunction) => {
-  logging.info(NAMESPACE, 'Root health check route called');
+  logging.info(NAMESPACE, "Root health check route called");
 
-  return res.status(200).json({
-    message: 'Hello'
-  });
+  const locals = res.locals;
+
+  res.render("root");
 };
 
 export default { get };
