@@ -20,7 +20,7 @@ app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "../views"));
 
 /** Using the public directory */
-app.use("/", express.static(path.join(__dirname, "../dist")));
+app.use("/", express.static(path.join(__dirname, "../assets")));
 
 /** Logging the request and default locals */
 app.use((req, res, next) => {
@@ -33,8 +33,8 @@ app.use((req, res, next) => {
   const locals = res.locals;
 
   locals.title = config.server.projectName;
-  locals.styles = ["/public/styles/global.css", "/public/styles/header.css", "/public/styles/footer.css"];
-  locals.scripts = ["/public/scripts/main.js"];
+  locals.styles = ["/styles/main.css"];
+  locals.scripts = ["/scripts/main.js"];
 
   next();
 });

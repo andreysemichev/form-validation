@@ -1,0 +1,19 @@
+.footer {
+  height: 50px;
+  background-color: $colorBlack;
+  color: $colorWhite;
+  flex: 0 0 auto;
+
+  &__inner {
+    height: 100%;
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      font-weight: 600;
+      height: 100%;
+    }
+  }
+}

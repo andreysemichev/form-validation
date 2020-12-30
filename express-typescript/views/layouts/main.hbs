@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-{{#each styles}}
-  <link rel="stylesheet" type="text/css" href="{{this}}">
-{{/each}}
+  {{#each styles}}
+    <link rel="stylesheet" type="text/css" href="{{this}}">
+  {{/each}}
   <title>{{title}}</title>
 </head>
 <body>
@@ -15,8 +15,8 @@
     {{{ body }}}
   </div>
   {{> footer }}
-{{#each scripts}}
-  <script type="text/javascript" src="{{this}}"></script>
-{{/each}}
+  {{#each scripts}}
+    <script type="text/javascript" src="{{this}}"></script>
+  {{/each}}
 </body>
 </html>

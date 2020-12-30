@@ -6,12 +6,12 @@ const uglify = require("gulp-uglify");
 
 const path = {
   styles: {
-    in: "dev/styles/**/*.sass",
-    out: "dist/styles"
+    in: "dev/styles/**/*.scss",
+    out: "assets/styles"
   },
   scripts: {
     in: "dev/scripts/**/*.js",
-    out: "dist/scripts"
+    out: "assets/scripts"
   }
 };
 
